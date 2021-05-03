@@ -135,7 +135,7 @@ def main():
     driver = webdriver.Chrome(PATH)
     driver.get(LANK)
     time.sleep(T_KORT)
-    email, lösen = "rickard@ddagen.se", "WtfGeMigEttLosenIgen"
+    email, lösen = EPOST, LOSEN
 
     email_fält = driver.find_element_by_id("identifierId")
     email_fält.send_keys(email)
